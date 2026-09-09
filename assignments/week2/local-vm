@@ -1,0 +1,64 @@
+Added a few extra notes at the beginning of the lecture tutorial:
+
+For development purposes, we recommend using an Ubuntu virtual machine set up with Oracle VirtualBox. It is crucial to use a current LTS (Long Term Support) version of Ubuntu (e.g., 22.04 or 24.04) rather than outdated versions. (Current version is 26.04.1). Choose the Intel/AMD architecture unless you are on a machine with an ARM processor (i.e. Raspberry Pi). 64-bit (x86-64) host CPU and host OS required.
+
+Installation
+VirtualBox
+VirtualBox is free and open-source. Detailed installation instructions for your specific operating system can be found at: * VirtualBox Downloads
+
+Ubuntu ISO
+Download the latest Ubuntu Desktop LTS image: * Ubuntu Desktop Download
+
+Hardware Requirements
+Depending on your host machine's specifications, you may find that some configurations are too resource-constrained. We recommend the following minimal host setup for a smooth experience: * CPU: Multi-core processor with virtualization extensions (VT-x or AMD-V) enabled in BIOS/UEFI. * RAM: At least 8 GB of system memory. * Storage: At least 50 GB of free hard drive space.
+
+Recommended VM Configurations
+Depending on your task, you may want to adjust the resources allocated to the VM:
+
+Profile	CPU Cores	RAM	Disk Space	Use Case
+Minimal	1	2 GB	10 GB	Basic Linux CLI tasks
+Development	2	4 GB	25 GB	IDEs, Compiling, LaTeX
+Heavy	4	8 GB	50 GB	Docker, Heavy Data Processing
+A tutorial video for the installation process is available here: Video Using Ubuntu in VirtualBox
+
+Step One:
+
+Open VirtualBox and click the New (blue star) button in the top toolbar
+
+Set Name to "Ubuntu"
+
+Set Type to Linux and Version to Ubuntu (64-bit)
+
+In the ISO Image field, browse and select the downloaded Ubuntu .iso file
+
+You may be prompted for a username and password. If you add one, remember it because you'll need it for when you open Ubuntu
+
+Check Skip Unattended Installation if you prefer to perform the standard OS setup manually, then click Next
+
+Step Two:
+Assign physical system resources to your virtual machine
+  See information above for allocations
+
+Assign at least 2 CPUs for smooth performance
+
+Click Next
+
+Step Three:
+Allocate the virtual hard disk space based on the recommended amounts above
+
+Click Next, review the summary and then click Finish
+
+Step Four:
+To boot your new VM, select from the left panel and click Start (green arrow)
+
+The system will install and it might take a while. Be patient
+
+The Ubuntu screen will come up when installation is complete and you will be prompted for UN/PW
+
+Enter the information you added during setup and you will be logged in
+
+
+Your VM is all set up! You can go from there with additional options and tools.
+
+
+
