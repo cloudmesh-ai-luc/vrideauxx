@@ -1,15 +1,15 @@
 # vrideauxx
 V. Rideaux (vrideaux@luc.edu)
 
-*  Info
-Class: 488
-Firstname: V.
-Lastname: Rideaux
-LUC e-mail: vrideaux@luc.edu
-chameloncloud id: vrideaux24@gmail.com
-access id: vrideaux
-github id: vrideauxx
+## Info
 
+Class: 488 <br/>
+Firstname: V.<br/>
+Lastname: Rideaux<br/>
+LUC e-mail: vrideaux@luc.edu<br/>
+chameloncloud id: vrideaux24@gmail.com<br/>
+access id: vrideaux<br/>
+github id: vrideauxx<br/>
 
 ## Week 3
 
