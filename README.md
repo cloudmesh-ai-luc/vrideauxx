@@ -1,6 +1,4 @@
 # vrideauxx
-V. Rideaux (vrideaux@luc.edu)
-
 ## Info
 
 Class: 488 <br/>
