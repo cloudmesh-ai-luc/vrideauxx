@@ -1,5 +1,5 @@
 # vrideauxx
-V. Rideaux
+V. Rideaux (vrideaux@luc.edu)
 
 *  Accounts: 
 
@@ -45,8 +45,8 @@ V. Rideaux
 
 * [ ] Assignment W2.2: GitHub Repository (Due Sep 10, 2026, 9am)
   * [ ] Verify that you can write into a file in your assigned GitHub repository.
-  * [ ] Put something useful into the README such as your first and last name. [LINK]
-  * [ ] Upload your public key. [LINK]
+  * [ ] Put something useful into the [README](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/README.md) such as your first and last name.
+  * [ ] Upload your public key. 
 
 
 * [ ] Assignment W2.3: Backup Your Computer (Due Sep 10, 2026, 9am)
@@ -55,7 +55,7 @@ V. Rideaux
   * [ ] Choose one backup method and outline the setup steps.
   * [ ] Create a weekly backup schedule (day, time, what to back up).
   * [ ] Research an example from cloud computing where a missing backup strategy led to issues and write a short incident case.
-  * [ ] Submit to `/assignments/week2/backup.md`. [LINK]
+  * [ ] Submit to [assignments/week2/backup.md](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/assignments/week2/backup.md)
 
 
 * [ ] Assignment W2.4: Local VM (Due Sep 10, 2026, 9am)
@@ -63,32 +63,32 @@ V. Rideaux
   * [ ] Pick a hypervisor (VirtualBox, VMware, Hyper-V, Multipass). [Which?]
   * [ ] Create and start a minimal VM (e.g., Ubuntu 22.04).
   * [ ] Capture proof of login with a terminal screenshot (≤ 800×600 px) showing your prompt and a command.
-  * [ ] Write/update the tutorial in `assignments/week1/local-vm.md` and save the screenshot as `assignments/week1/vm-login.png`. [LINK/s]
+  * [ ] Write/update the tutorial in [assignments/week2/local-vm.md](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/assignments/week2/backup.md) and save the screenshot as [assignments/week2/vm-login.png](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/assignments/week2/vm-login.png).
 
 
 * [ ] Assignment W2.5: Project proposal (Due Sep 10, 2026, 9am)
-  * [ ] Start working towards a project proposal and fill out administrative fields and text. [LINK]
+  * [ ] Start working towards a project proposal and fill out administrative fields and text.
 
 
 # Week 1
 
-  * [ ] Assignment W1.1: What hardware do you have? (Past Due) [LINK]
+  * [ ] Assignment W1.1: What hardware do you have?
   * [ ] Fill out the LUC Hardware Questionnaire.
 
 
-* [ ] Assignment W1.2: Lecture review (Past Due)
+* [ ] Assignment W1.2: Lecture review
   * [ ] Review all sections under LECTURES -> INTRODUCTIONS and post questions on Piazza.
 
 
-* [ ] Assignment W1.3: Look over the assignment sections (Past Due)
+* [ ] Assignment W1.3: Look over the assignment sections
   * [ ] Review all sections under ASSIGNMENTS (Overview and weekly sections).
 
 
-* [ ] Assignment W1.4: Create class accounts (Past Due)
+* [ ] Assignment W1.4: Create class accounts 
   * [ ] Create an account on access-ci.org.
   * [ ] Create an account on chameleoncloud.org.
   * [ ] Set up a GitHub account.
-  * [ ] Post account information to Piazza under the accounts category. [LINK]
+  * [ ] Post account information to Piazza under the accounts category. [piazza link](https://piazza.com/class/mt5rkdsycb31c3/post/13)
 
 
 * [ ] Assignment W1.5: Work ahead: Refresh knowledge about Python and Linux (Past Due)
