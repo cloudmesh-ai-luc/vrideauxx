@@ -5,3 +5,11 @@
 # Chamelon Cloud VM
 
 ![Chameleon](chameleon.png)
+
+# Comparison
+
+The use of the VM on the local machine was very similar to how it was on Jetstream 2. Both were mostly initialized through Gitbash and connected with SSH. The biggest difference being that with Oracle VirtualBox, it connects directly to an interface (i.e. Ubuntu) when restarted after setup. You have to do extra steps to setup an interface for Jetstream2, such as using Exosphere.
+
+For Chameleon Cloud via Horizon, this felt much more simple to get started. Since most of what you need to start an instance is in the wizard, the amount of CMD/Bash work you need to do is much more minimal than the previous two. Minimal setup to get started on what you want to work on.
+
+Out of all three, VirtualBox followed by Chameleon Cloud are the preferred methods.
