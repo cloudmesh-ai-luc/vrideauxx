@@ -11,19 +11,19 @@ github id: vrideauxx<br/>
 
 ## Week 3
 
-* [ ] Assignment W3.1: VM on Jetstream (Due Sep 17, 2026, 9am)
-  * [ ] Start a VM on Jetstream and follow the tutorial provided.
-  * [ ] Improve the tutorial while creating pull requests in the lecture notes if you see issues.
-  * [ ] Document your activity with a screenshot of the terminal (800x600).
+* [x] Assignment W3.1: VM on Jetstream (Due Sep 17, 2026, 9am)
+  * [x] Start a VM on Jetstream and follow the tutorial provided.
+  * [x] Improve the tutorial while creating pull requests in the lecture notes if you see issues.
+  * [x] Document your activity with a screenshot of the terminal (800x600).
 
 
-* [ ] Assignment W3.2: VM on Chameleon Cloud (Due Sep 17, 2026, 9am)
-  * [ ] Set your preferred time zone in Chameleon settings.
-  * [ ] Make sure you have a key in your `.ssh` dir on your laptop and upload the public key to Chameleon.
-  * [ ] Explore the portal and browse around to develop a plan first.
-  * [ ] Make a reservation not exceeding 1 hour.
-  * [ ] Start up a VM using a Chameleon Cloud image for Ubuntu 24.04 using the smallest image size possible.
-  * [ ] Document your activity with a screenshot of the terminal (800x600).
+* [x] Assignment W3.2: VM on Chameleon Cloud (Due Sep 17, 2026, 9am)
+  * [x] Set your preferred time zone in Chameleon settings.
+  * [x] Make sure you have a key in your `.ssh` dir on your laptop and upload the public key to Chameleon.
+  * [x] Explore the portal and browse around to develop a plan first.
+  * [x] Make a reservation not exceeding 1 hour.
+  * [x] Start up a VM using a Chameleon Cloud image for Ubuntu 24.04 using the smallest image size possible.
+  * [x] Document your activity with a screenshot of the terminal (800x600).
 
 
 * [ ] Assignment W3.3: OPTIONAL: VM on public cloud (Due Sep 17, 2026, 9am)
@@ -31,12 +31,12 @@ github id: vrideauxx<br/>
   * [ ] Document with screenshots how you created your account, ensuring sensitive information is blurred out.
 
 
-* [ ] Assignment W3.4: Compare (Due Sep 17, 2026, 9am)
-  * [ ] Compare your experience between starting a VM on your local machine vs using Chameleon Cloud.
-  * [ ] Put all assignment answers into 
+* [x] Assignment W3.4: Compare (Due Sep 17, 2026, 9am)
+  * [x] Compare your experience between starting a VM on your local machine vs using Chameleon Cloud.
+  * [x] Put all assignment answers into 
      
-* [ ] Assignment W3.5: README.md (Due Sep 17, 2026, 9am)
-  * [ ] put your link here  [LINK]
+* [x] Assignment W3.5: README.md (Due Sep 17, 2026, 9am)
+  * [x] put your link here  [README](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/README.md)
 
 
 
