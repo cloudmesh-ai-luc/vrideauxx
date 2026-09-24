@@ -1,0 +1,44 @@
+# Chameleon KVM@TACC VM Management Makefile
+
+VM_NAME ?= chameleon-devops
+IMAGE ?= CC-Ubuntu22.04
+FLAVOR ?= reservation:c61813c3-961a-4d83-a464-4835edb7d33a
+KEY_NAME ?= my-key
+NETWORK ?= sharednet1
+
+.PHONY: all launch status ssh stop start delete clean help
+
+all: status
+
+status:
+	@echo "Checking Chameleon VM status..."
+	openstack server list
+
+launch:
+	@echo "Launching Chameleon instance $(VM_NAME)..."
+	openstack server create --image $(IMAGE) --flavor $(FLAVOR) --network $(NETWORK) --key-name $(KEY_NAME) $(VM_NAME)
+
+ssh:
+	@echo "Connecting to Chameleon instance $(VM_NAME)..."
+	openstack server ssh $(VM_NAME)
+
+stop:
+	@echo "Stopping Chameleon instance $(VM_NAME)..."
+	openstack server stop $(VM_NAME)
+
+start:
+	@echo "Starting Chameleon instance $(VM_NAME)..."
+	openstack server start $(VM_NAME)
+
+delete:
+	@echo "Deleting Chameleon instance $(VM_NAME)..."
+	openstack server delete $(VM_NAME)
+
+clean: delete
+
+help:
+	@echo "Available Chameleon targets:"
+	@echo "  make -f Makefile.chameleon launch  - Provision Chameleon VM"
+	@echo "  make -f Makefile.chameleon status  - List running cloud instances"
+	@echo "  make -f Makefile.chameleon ssh     - SSH into cloud instance"
+	@echo "  make -f Makefile.chameleon clean   - Delete cloud instance"
