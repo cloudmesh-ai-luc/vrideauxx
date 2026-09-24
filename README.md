@@ -11,42 +11,45 @@ github id: vrideauxx<br/>
 
 ## Week 4
 
-- [ ] Assignment W4.1: VM on local machine via Makefile
+- [x] Assignment W4.1: VM on local machine via Makefile
 
-    - [ ] Pick a local VM framework and ensure it is installed.
-    - [ ] Write a Makefile with all the necessary targets to manage a single VM.
-    - [ ] Configure/determine how to manage multiple machines.
-    - [ ] Organize different Makefiles for different local and cloud environments using directories.
+    - [x] Pick a local VM framework and ensure it is installed.
+    - [x] Write a Makefile with all the necessary targets to manage a single VM.
+    - [x] Configure/determine how to manage multiple machines.
+    - [x] Organize different Makefiles for different local and cloud environments using directories.
+    [Local Machine](assignments/week4/local)
 
-- [ ] Assignment W4.2: VM on Jetstream 2
+- [x] Assignment W4.2: VM on Jetstream 2
 
-    - [ ] Install the OpenStack command-line client.
-    - [ ] Write a Makefile with all the necessary targets to manage a single VM.
-    - [ ] Configure/determine how to manage multiple machines.
-    - [ ] Check your work into your repository.
+    - [x] Install the OpenStack command-line client.
+    - [x] Write a Makefile with all the necessary targets to manage a single VM.
+    - [x] Configure/determine how to manage multiple machines.
+    - [x] Check your work into your repository.
+    [Jetstream2](assignments/week4/jetstream)
 
-- [ ] Assignment W4.3: VM on Chameleon Cloud
+- [x] Assignment W4.3: VM on Chameleon Cloud
 
-    - [ ] Install the OpenStack command-line client.
-    - [ ] Install python-chi.
-    - [ ] Write a Makefile with all the necessary targets to manage a single VM.
-    - [ ] Configure/determine how to manage multiple machines.
-    - [ ] Check your work into your repository.
+    - [x] Install the OpenStack command-line client.
+    - [x] Install python-chi.
+    - [x] Write a Makefile with all the necessary targets to manage a single VM.
+    - [x] Configure/determine how to manage multiple machines.
+    - [x] Check your work into your repository.
+    [Chameleon](assignments/week4/chameleon)
+    
+- [x] Assignment W4.4: Review Python
 
-- [ ] Assignment W4.4: Review Python
-
-    - [ ] Set up a Python virtual environment (using venv or pyenv; avoid conda/miniconda unless strictly justified).
-    - [ ] Ensure the OpenStack command-line tool is installed via pipx.
-    - [ ] Review using pip install and pipx install.
-    - [ ] Review import statements and os.system (write a program using os.system("ls")).
-    - [ ] Review how to create a __main__ block.
-    - [ ] Review how to write a function.
-    - [ ] Review how to pass command-line arguments to a Python program (using click).
-    - [ ] Review how to run shell commands from within Python, focusing on os.system() and subprocess.run().
-    - [ ] Does it take more then 3 hours  please use Piazza to find out where you may need some more help.
+    - [x] Set up a Python virtual environment (using venv or pyenv; avoid conda/miniconda unless strictly justified).
+    - [x] Ensure the OpenStack command-line tool is installed via pipx.
+    - [x] Review using pip install and pipx install.
+    - [x] Review import statements and os.system (write a program using os.system("ls")).
+    - [x] Review how to create a __main__ block.
+    - [x] Review how to write a function.
+    - [x] Review how to pass command-line arguments to a Python program (using click).
+    - [x] Review how to run shell commands from within Python, focusing on os.system() and subprocess.run().
+    - [x] Does it take more then 3 hours  please use Piazza to find out where you may need some more help.
           Indicate
           - [ ] yes
-          - [ ] no
+          - [x] no
 
 ## Week 3
 
