@@ -24,11 +24,11 @@ Developer makes change
 Pull Request
         ↓
 GitHub Actions
- ├─ Tests
- ├─ Linting
- ├─ Gitleaks
- ├─ Hadolint
- └─ Trivy
+ ├─ Python tests
+ ├─ Python linting (Ruff)
+ ├─ Secret scanning (Gitleaks)
+ ├─ Dockerfile linting (Hadolint)
+ └─ Container vulnerability scanning (Trivy)
         ↓
 Build Docker image
         ↓
