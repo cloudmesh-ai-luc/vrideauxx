@@ -1,0 +1,43 @@
+# Jetstream VM Management Makefile
+
+VM_NAME ?= jetstream-devops
+IMAGE ?= Featured-Ubuntu22
+FLAVOR ?= m3.medium
+KEY_NAME ?= my-key
+
+.PHONY: all launch status ssh stop start delete clean help
+
+all: status
+
+status:
+	@echo "Checking Jetstream VM status..."
+	openstack server list
+
+launch:
+	@echo "Launching Jetstream instance $(VM_NAME)..."
+	openstack server create --image $(IMAGE) --flavor $(FLAVOR) --key-name $(KEY_NAME) $(VM_NAME)
+
+ssh:
+	@echo "Connecting to Jetstream instance $(VM_NAME)..."
+	openstack server ssh $(VM_NAME)
+
+stop:
+	@echo "Stopping Jetstream instance $(VM_NAME)..."
+	openstack server stop $(VM_NAME)
+
+start:
+	@echo "Starting Jetstream instance $(VM_NAME)..."
+	openstack server start $(VM_NAME)
+
+delete:
+	@echo "Deleting Jetstream instance $(VM_NAME)..."
+	openstack server delete $(VM_NAME)
+
+clean: delete
+
+help:
+	@echo "Available Jetstream targets:"
+	@echo "  make -f Makefile.jetstream launch  - Provision Jetstream VM"
+	@echo "  make -f Makefile.jetstream status  - List running cloud instances"
+	@echo "  make -f Makefile.jetstream ssh     - SSH into cloud instance"
+	@echo "  make -f Makefile.jetstream clean   - Delete cloud instance"

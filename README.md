@@ -1,0 +1,146 @@
+# vrideauxx
+## Info
+
+Class: 488 <br/>
+Firstname: V.<br/>
+Lastname: Rideaux<br/>
+LUC e-mail: vrideaux@luc.edu<br/>
+chameloncloud id: vrideaux24@gmail.com<br/>
+access id: vrideaux<br/>
+github id: vrideauxx<br/>
+
+## Week 4
+
+- [x] Assignment W4.1: VM on local machine via Makefile
+
+    - [x] Pick a local VM framework and ensure it is installed.
+    - [x] Write a Makefile with all the necessary targets to manage a single VM.
+    - [x] Configure/determine how to manage multiple machines.
+    - [x] Organize different Makefiles for different local and cloud environments using directories.
+    [Local Machine](assignments/week4/local)
+
+- [x] Assignment W4.2: VM on Jetstream 2
+
+    - [x] Install the OpenStack command-line client.
+    - [x] Write a Makefile with all the necessary targets to manage a single VM.
+    - [x] Configure/determine how to manage multiple machines.
+    - [x] Check your work into your repository.
+    [Jetstream2](assignments/week4/jetstream)
+
+- [x] Assignment W4.3: VM on Chameleon Cloud
+
+    - [x] Install the OpenStack command-line client.
+    - [x] Install python-chi.
+    - [x] Write a Makefile with all the necessary targets to manage a single VM.
+    - [x] Configure/determine how to manage multiple machines.
+    - [x] Check your work into your repository.
+    [Chameleon](assignments/week4/chameleon)
+    
+- [x] Assignment W4.4: Review Python
+
+    - [x] Set up a Python virtual environment (using venv or pyenv; avoid conda/miniconda unless strictly justified).
+    - [x] Ensure the OpenStack command-line tool is installed via pipx.
+    - [x] Review using pip install and pipx install.
+    - [x] Review import statements and os.system (write a program using os.system("ls")).
+    - [x] Review how to create a __main__ block.
+    - [x] Review how to write a function.
+    - [x] Review how to pass command-line arguments to a Python program (using click).
+    - [x] Review how to run shell commands from within Python, focusing on os.system() and subprocess.run().
+    - [x] Does it take more then 3 hours  please use Piazza to find out where you may need some more help.
+          Indicate
+          - [ ] yes
+          - [x] no
+
+## Week 3
+
+* [x] Assignment W3.1: VM on Jetstream (Due Sep 17, 2026, 9am)
+  * [x] Start a VM on Jetstream and follow the tutorial provided.
+  * [x] Improve the tutorial while creating pull requests in the lecture notes if you see issues.
+  * [x] Document your activity with a screenshot of the terminal (800x600).
+
+
+* [x] Assignment W3.2: VM on Chameleon Cloud (Due Sep 17, 2026, 9am)
+  * [x] Set your preferred time zone in Chameleon settings.
+  * [x] Make sure you have a key in your `.ssh` dir on your laptop and upload the public key to Chameleon.
+  * [x] Explore the portal and browse around to develop a plan first.
+  * [x] Make a reservation not exceeding 1 hour.
+  * [x] Start up a VM using a Chameleon Cloud image for Ubuntu 24.04 using the smallest image size possible.
+  * [x] Document your activity with a screenshot of the terminal (800x600).
+
+
+* [ ] Assignment W3.3: OPTIONAL: VM on public cloud (Due Sep 17, 2026, 9am)
+  * [ ] Optional: Create a VM on a cloud of your choice (AWS, Azure, Google) using the free tier.
+  * [ ] Document with screenshots how you created your account, ensuring sensitive information is blurred out.
+
+
+* [x] Assignment W3.4: Compare (Due Sep 17, 2026, 9am)
+  * [x] Compare your experience between starting a VM on your local machine vs using Chameleon Cloud.
+  * [x] Put all assignment answers into 
+     
+* [x] Assignment W3.5: README.md (Due Sep 17, 2026, 9am)
+  * [x] put your link here  [README](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/README.md)
+
+
+
+ ## Week 2
+  
+  * [x] Assignment W2.1: Google Account, Piazza Account post cleanup (Due Sep 10, 2026, 9am)
+  * [x] Locate your account post in Piazza and add your google account.
+  * [x] Correct your Chameleon ID to the registered email.
+  * [x] Fix your subject line to `Firstname Lastname (lucid@luc.edu)`.
+
+
+* [x] Assignment W2.2: GitHub Repository (Due Sep 10, 2026, 9am)
+  * [x] Verify that you can write into a file in your assigned GitHub repository.
+  * [x] Put something useful into the [README](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/README.md) such as your first and last name.
+  * [x] Upload your public key. 
+
+
+* [x] Assignment W2.3: Backup Your Computer (Due Sep 10, 2026, 9am)
+  * [x] Write a one‑paragraph explanation (4–6 sentences) on why backing up a computer is important. 
+  * [x] List three real‑world consequences of not having a backup.
+  * [x] Choose one backup method and outline the setup steps.
+  * [x] Create a weekly backup schedule (day, time, what to back up).
+  * [x] Research an example from cloud computing where a missing backup strategy led to issues and write a short incident case.
+  * [x] Submit to [assignments/week2/backup.md](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/assignments/week2/backup.md)
+
+
+* [x] Assignment W2.4: Local VM (Due Sep 10, 2026, 9am)
+  * [x] Windows: Install a terminal on Windows (Git Bash/WSL). [Which OS do you have?
+  * [x] Pick a hypervisor (VirtualBox, VMware, Hyper-V, Multipass). [Which?]
+  * [x] Create and start a minimal VM (e.g., Ubuntu 22.04).
+  * [x] Capture proof of login with a terminal screenshot (≤ 800×600 px) showing your prompt and a command.
+  * [x] Write/update the tutorial in [assignments/week2/local-vm.md](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/assignments/week2/backup.md) and save the screenshot as [assignments/week2/vm-login.png](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/assignments/week2/vm-login.png).
+
+
+* [x] Assignment W2.5: Project proposal (Due Sep 10, 2026, 9am)
+  * [ ] Start working towards a project proposal and fill out administrative fields and text.[Project](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/assignments/project.md) 
+
+
+# Week 1
+
+  * [x] Assignment W1.1: What hardware do you have?
+  * [x] Fill out the LUC Hardware Questionnaire.
+
+
+* [x] Assignment W1.2: Lecture review
+  * [x] Review all sections under LECTURES -> INTRODUCTIONS and post questions on Piazza.
+
+
+* [x] Assignment W1.3: Look over the assignment sections
+  * [x} Review all sections under ASSIGNMENTS (Overview and weekly sections).
+
+
+* [x] Assignment W1.4: Create class accounts 
+  * [x] Create an account on access-ci.org.
+  * [x] Create an account on chameleoncloud.org.
+  * [x] Set up a GitHub account.
+  * [x] Post account information to Piazza under the accounts category. [piazza link](https://piazza.com/class/mt5rkdsycb31c3/post/13)
+
+
+* [x] Assignment W1.5: Work ahead: Refresh knowledge about Python and Linux
+  * [x] Review optional material in the class documentation.
+
+
+* [ ] Assignment W1.6: Improve the Web Site (ongoing)
+  * [ ] Update errors or notify instructors throughout the semester.
