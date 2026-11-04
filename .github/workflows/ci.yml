@@ -10,23 +10,23 @@ jobs:
   security-and-build:
     runs-on: ubuntu-latest
     steps:
-      - name: 📥 Checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🕵️‍♂️ Secret Scanning (Gitleaks)
+      - name: Secret Scanning (Gitleaks)
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🧹 Dockerfile Linting (Hadolint)
+      - name: Dockerfile Linting (Hadolint)
         uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: Dockerfile
 
-      - name: 🐳 Build Docker Image
+      - name: Build Docker Image
         run: docker build -t ai-microservice:latest .
 
-      - name: 🛡️ Vulnerability Scanning (Trivy)
+      - name: Vulnerability Scanning (Trivy)
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'ai-microservice:latest'
