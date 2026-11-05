@@ -9,7 +9,7 @@ Project updates
 * **Completed:** Configured the pipeline to automatically build the Docker image whenever code is pushed to the main branch
 * **Completed:** Installed Cline and linked to Jetstream2. Verified that it is linked.
 
-# Upcoming
+## Upcoming
 * **Next Steps:** Establish Continuous Deployment (CD) to a cloud environment and configure UptimeRobot monitoring.
 
 * **Blockers:** None currently.
