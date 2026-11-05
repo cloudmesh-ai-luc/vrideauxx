@@ -12,3 +12,12 @@ dependencies = [
     "mkdocs",
     "mkdocs-material",
 ]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+    "project",
+    "."
+]
+python_files = ["test_*.py", "*_test.py"]
+python_functions = ["test_*"]
