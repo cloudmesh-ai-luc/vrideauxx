@@ -1,8 +1,8 @@
 ## Project 
 
-Name of project: ???
+Gvl: Name of project: ???
 
-Could you do real urls so i can easier review such as 
+Gvl: Could you do real urls so i can easier review such as 
 * instead of `.gitignore` use [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/.gitignore) do thid for all files mentioned here. I will then review again. You can use llm to do that.
 
 ## Completed
