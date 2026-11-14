@@ -19,10 +19,14 @@ Gvl: Could you do real urls so i can easier review such as
 ## Upcoming
 
 * **Next Steps:** Establish Continuous Deployment (CD) to a cloud environment and configure UptimeRobot monitoring.
+  * GvL: explain why you can not do this with github and how to do this locally. Explain the difference between a free project and if you wrork for a top500 project. What would you do. Would you use jenkins or github or something else. 
 
 * **Blockers:** None currently.
 # Updates
 Project and `cloudmesh-ai-vm` progress updates.
+
+GvL: this must be separated it must not be "and"
+
 
 ## Completed
 
@@ -43,7 +47,10 @@ Project and `cloudmesh-ai-vm` progress updates.
   * **Provider 3 — Chameleon Cloud:** Credential tests implemented and SSH/API setup verified; reviewing `dev3` OpenStack/Chameleon provider code and open issues to submit focused PRs.
 * **Pull Requests:** Direct links to new PRs in `https://github.com/cloudmesh-ai/cloudmesh-ai-vm` will be listed below as each PR is opened.
 
+GvL: link to your PR and the issue is missing you work on so i can review. Therefore, not reviewed.
+
 ## Project Weekly Progress (`vrideauxx`)
+
 * **AI Inference & Deployment:** Finalizing AI compute allocation (evaluating Chameleon DGX hosting vs. external AI inference API) and establishing Continuous Deployment (CD) to a cloud environment via `cloudmesh-ai-vm`.
 * **Observability:** Configuring UptimeRobot uptime monitoring and Discord Webhook alerts.
 * **Documentation & Demo:** Linking `README.md` directly to the existing MkDocs documentation (`index.md` and `project/project.md`), keeping installation and execution steps current, and adding screenshots or a short walkthrough video if needed.
