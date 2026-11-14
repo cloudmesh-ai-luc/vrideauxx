@@ -4,7 +4,8 @@ Gvl: Name of project: ???
 
 Gvl: Could you do real urls so i can easier review such as 
 * instead of `.gitignore` use [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/.gitignore) do thid for all files mentioned here. I will then review again. You can use llm to do that.
-   * gitignore is incomplete. 
+   * gitignore is incomplete.
+* The integration of the DevOps tools is great. Review it to determine if they are allowed on a sghared repo. E.g. we have 10 eople. If all ten people do that to thair projects would that at one point resullt in cost? Put your research into an MD file and post to piazza a short mail with your finding while pointing to the md file. I like to include that into the lecture so make it a general document. Put also an explenation and link for each tool in it. Describe that in addition of doing this in git checkin these tests should be run locally via `make check` . So before you evebn do the commit all these tests have been done locally. 
 
 ## Completed
 
