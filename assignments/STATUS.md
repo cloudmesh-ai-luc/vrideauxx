@@ -43,7 +43,7 @@ Project and `cloudmesh-ai-vm` progress updates.
 
 ### Missed Classes & Recordings
 * **10/22 Lecture (Completed):** Will review lecture recording, slides, and notes per the 10/30 catch-up plan and verified configuration steps in WSL/Docker.
-* **10/28 Lecture (Completed):** Missed due to coursework deadlines in another class; reviewed lecture recording, slides, and notes per the 10/30 catch-up plan and verified configuration steps in WSL/Docker.
+* **10/28 Lecture (Completed):** Reviewed lecture recording, slides, and notes per the 10/30 catch-up plan and verified configuration steps in WSL/Docker.
 * **Piazza & Video Compliance:** Tracking all Piazza threads and follow-up responses via the Piazza web interface and watching lecture recordings while logged into the official Loyola University Chicago (LUC) Zoom account.
 
 ### Cloudmesh-ai-vm (Flexible / Milestone-Based Allocation)
