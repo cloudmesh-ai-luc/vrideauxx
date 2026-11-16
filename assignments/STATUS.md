@@ -40,7 +40,7 @@ Changes to [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/mai
 * **Issue disposition:** All three issues are closed. The Chameleon report was reproduced and addressed by the instructor; the Multipass and Jetstream failures were not reproduced by the instructor. These are issue reports, not claims that I implemented fixes.
 * **Status of further work:** WSL2 provider debugging and `dev3` compliance/smoke checks remain in progress. No additional PR is claimed here until a link is available.
 * **Determined what the issue was with GitHub disconnect; created `work` directory with `vrideauxx`, `cloudmesh-ai-vm`, and `cloudmesh-ai-llm-mock` cloned. 
-* Created video demo of CLI proficiency. Video to be uploaded to Piazza.
+* Created video demo of CLI proficiency. Video to be uploaded to Piazza with screenshots included.
 
 
 ## Cloudmesh-ai-vm Weekly Progress (Branch: `dev3`)
