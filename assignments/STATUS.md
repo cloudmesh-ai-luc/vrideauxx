@@ -1,44 +1,49 @@
-## Project 
+## Project : Secure AI-Powered REST Microservice with Automated DevSecOps Pipeline
 
-Gvl: Name of project: ???
+Changes to [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/.gitignore) are in progress. The current .gitignore includes Python cache files, `.env`, `venv/`, and `.pytest_cache/`, but will be expanded for `.venv/`, `.env.*`, coverage, build outputs, editor files, and other generated artifacts as applicable.
 
-Gvl: Could you do real urls so i can easier review such as 
-* instead of `.gitignore` use [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/.gitignore) do thid for all files mentioned here. I will then review again. You can use llm to do that.
-   * gitignore is incomplete.
-* The integration of the DevOps tools is great. Review it to determine if they are allowed on a sghared repo. E.g. we have 10 eople. If all ten people do that to thair projects would that at one point resullt in cost? Put your research into an MD file and post to piazza a short mail with your finding while pointing to the md file. I like to include that into the lecture so make it a general document. Put also an explenation and link for each tool in it. Describe that in addition of doing this in git checkin these tests should be run locally via `make check` . So before you evebn do the commit all these tests have been done locally. 
+```I will work on looking into your question about a shared repo and add an md file with the research on piazza.```
+
+```For the `make check`, the intended development workflow is `make check` locally before `git add`, `git commit`, and pushing a PR. That target should execute the same relevant tests and static/security checks as CI, including Ruff, Hadolint, Gitleaks, and Trivy where installed. Implementation and successful execution of `make check` have not yet been verified. It's still currently an action item.```
 
 ## Completed
+* **Completed:** Initialized project directory, created FastAPI boilerplate, set up [`requirements.txt`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/requirements.txt) and [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/.gitignore)
+* **Completed:** Wrote [`Dockerfile`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/Dockerfile) and [`docker-compose.yml`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/docker-compose.yml), resolved WSL socket permissions, and successfully ran the containerized application locally
+* **Completed:** Designed and deployed the Continuous Integration (CI) pipeline using GitHub Actions ([`.github/workflows/ci.yml`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/main/.github/workflows/ci.yml))
 
-* **Completed:** Initialized project directory, created FastAPI boilerplate, set up `requirements.txt` and `.gitignore`
-* **Completed:** Wrote `Dockerfile` and `docker-compose.yml`, resolved WSL socket permissions, and successfully ran the containerized application locally
-* **Completed:** Designed and deployed the Continuous Integration (CI) pipeline using GitHub Actions (`.github/workflows/ci.yml`)
-* **Completed:** Integrated automated DevSecOps tools into the CI pipeline: Gitleaks (secret scanning), Hadolint (Dockerfile linting), and Trivy (container vulnerability scanning)
-* **Completed:** Configured the pipeline to automatically build the Docker image whenever code is pushed to the main branch
-* **Completed:** Installed Cline and linked to Jetstream2. Verified that it is linked.
 
 ## Upcoming
 
 * **Next Steps:** Establish Continuous Deployment (CD) to a cloud environment and configure UptimeRobot monitoring.
-  * GvL: explain why you can not do this with github and how to do this locally. Explain the difference between a free project and if you wrork for a top500 project. What would you do. Would you use jenkins or github or something else. 
 
-* **Blockers:** None currently.
+  ```GitHub Actions could deploy to cloud services when the runner has network access and appropriate credentials. The current CI workflow only builds and scans; it has no deployment job or target to configure. Locally, deployment could be tested with Docker Compose and a shell script or Make target using environment variables kept outside Git. For a free class project, I would use GitHub Actions for CI and a small manually triggered deployment or self-hosted runner only when appropriate. For a large enterprise, I would evaluate GitHub Actions alongside Jenkins or another enterprise CI/CD platform based on security controls, network access, auditability, approvals, support, and operational cost; Jenkins offers infrastructure control but requires maintenance.```
+
+## Project Weekly Progress (`vrideauxx`)
+
+* **AI Inference & Deployment:** Finalizing AI compute allocation (evaluating Chameleon DGX hosting vs. external AI inference API) and establishing Continuous Deployment (CD) to a cloud environment via `cloudmesh-ai-vm`.
+* **Observability:** Configuring UptimeRobot uptime monitoring and Discord Webhook alerts.
+* **Documentation & Demo:** Linking `README.md` directly to the existing MkDocs documentation (`index.md` and `project/project.md`), keeping installation and execution steps current, and adding screenshots or a short walkthrough video if needed.
+
+
 # Updates
-Project and `cloudmesh-ai-vm` progress updates.
 
-GvL: this must be separated it must not be "and"
-
+**Clarification:** The completed items below relate to the class microservice project; cloudmesh-ai-vm contributions are documented separately in Cloudmesh-ai-vm Weekly Progress and Verified Cloudmesh Contribution Evidence below.
 
 ## Completed
 
-* **Project Setup:** Initialized project directory, created FastAPI boilerplate, and set up `requirements.txt` and `.gitignore`.
-* **Containerization:** Wrote `Dockerfile` and `docker-compose.yml`, resolved WSL socket permissions, and successfully ran the containerized application locally.
-* **DevSecOps CI Pipeline:** Designed and deployed the Continuous Integration (CI) pipeline using GitHub Actions (`.github/workflows/ci.yml`) with Python tests, Ruff linting, Gitleaks (secret scanning), Hadolint (Dockerfile linting), and Trivy (container vulnerability scanning).
-* **Automated Image Builds:** Configured the pipeline to automatically build the Docker image whenever code is pushed to the `main` branch.
-* **Documentation Site:** Configured MkDocs (`mkdocs.yml`) using the Material theme (`vrideauxx Documentation`) with site navigation linked to `index.md` and `project/project.md`.
-* **Cloud Tooling & Provider Tests:** Installed Cline and verified linkage to Jetstream2. Implemented Multipass and Chameleon credential tests for `cloudmesh-ai-vm`.
+### Verified Cloudmesh Contribution Evidence
+* **October 4–5, 2026 — Merged PR:** [PR #24 — Contributions to Code](https://github.com/cloudmesh-ai/cloudmesh-ai-vm/pull/24), authored by `vrideauxx`, merged by `laszewsk` on October 5 into `main`. The PR includes [commit `d0dbedb`](https://github.com/cloudmesh-ai/cloudmesh-ai-vm/commit/d0dbedb): added `test-multipass-with-credentials.py` in `tests/smoke-class` and updated `factory.py`. The PR description reports the test passed; this is one merged contribution, not an additional PR.
+* **October 24, 2026 — Smoke-test issue reporting on `dev2`:**
+  * [Issue #92 — Multipass invalid instance name (underscores)](https://github.com/cloudmesh-ai/cloudmesh-ai-vm/issues/92).
+  * [Issue #93 — Jetstream OpenStack SDK cloud resolution](https://github.com/cloudmesh-ai/cloudmesh-ai-vm/issues/93).
+  * [Issue #94 — Chameleon hardcoded SSH key path](https://github.com/cloudmesh-ai/cloudmesh-ai-vm/issues/94).
+* **Issue disposition:** All three issues are closed. The Chameleon report was reproduced and addressed by the instructor; the Multipass and Jetstream failures were not reproduced by the instructor. These are issue reports, not claims that I implemented fixes.
+* **Status of further work:** WSL2 provider debugging and `dev3` compliance/smoke checks remain in progress. No additional PR is claimed here until a link is available.
+* **Determined what the issue was with GitHub disconnect; created `work` directory with `vrideauxx`, `cloudmesh-ai-vm`, and `cloudmesh-ai-llm-mock` cloned. 
+* Created video demo of CLI proficiency. Video to be uploaded to Piazza.
+
 
 ## Cloudmesh-ai-vm Weekly Progress (Branch: `dev3`)
-
 * **Branch Sync & Smoke Testing:** Keeping local repository synchronized with upstream `dev3` (including recent merges such as PR #119) and running existing smoke tests alongside provider `pytest` suites.
 * **LLM-Assisted Review & Issue Verification:** Reviewing `dev3` provider modules with an LLM to identify targeted improvements, checking open/closed issues and PRs in `https://github.com/cloudmesh-ai/cloudmesh-ai-vm` to prevent duplicates, and filing unique issues where needed.
 * **Provider Progress (3 Providers):**
@@ -47,14 +52,6 @@ GvL: this must be separated it must not be "and"
   * **Provider 3 — Chameleon Cloud:** Credential tests implemented and SSH/API setup verified; reviewing `dev3` OpenStack/Chameleon provider code and open issues to submit focused PRs.
 * **Pull Requests:** Direct links to new PRs in `https://github.com/cloudmesh-ai/cloudmesh-ai-vm` will be listed below as each PR is opened.
 
-GvL: link to your PR and the issue is missing you work on so i can review. Therefore, not reviewed.
-
-## Project Weekly Progress (`vrideauxx`)
-
-* **AI Inference & Deployment:** Finalizing AI compute allocation (evaluating Chameleon DGX hosting vs. external AI inference API) and establishing Continuous Deployment (CD) to a cloud environment via `cloudmesh-ai-vm`.
-* **Observability:** Configuring UptimeRobot uptime monitoring and Discord Webhook alerts.
-* **Documentation & Demo:** Linking `README.md` directly to the existing MkDocs documentation (`index.md` and `project/project.md`), keeping installation and execution steps current, and adding screenshots or a short walkthrough video if needed.
-* **Blockers:** None currently.
 
 ## CATCHUP
 
@@ -80,4 +77,4 @@ GvL: link to your PR and the issue is missing you work on so i can review. There
 ### Project: Secure AI-Powered REST Microservice with Automated DevSecOps Pipeline (Flexible / Milestone-Based Allocation)
 
 * **Planned Hours:** ~3–6 hours/week (variable, milestone-driven)
-* **Status:** Because the core FastAPI service, Docker Compose setup, MkDocs documentation site, and GitHub Actions DevSecOps CI pipeline (Ruff, Gitleaks, Hadolint, Trivy) are already complete, remaining hours scale dynamically around milestone completion—specifically CD automation via `cloudmesh-ai-vm`, final AI inference integration, UptimeRobot/Discord alerts, and linking `README.md` to the MkDocs site.
+* **Status:** Because the core FastAPI service, Docker Compose setup, MkDocs documentation site are already complete, remaining hours scale dynamically around GitHub Actions DevSecOps CI pipeline (Ruff, Gitleaks, Hadolint, Trivy) milestone completion—specifically CD automation via `cloudmesh-ai-vm`, final AI inference integration, UptimeRobot/Discord alerts, and linking `README.md` to the MkDocs site.
