@@ -47,7 +47,16 @@ Changes to [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/mai
 * **Branch Sync & Smoke Testing:** Keeping local repository synchronized with upstream `dev3` (including recent merges such as PR #119) and running existing smoke tests alongside provider `pytest` suites.
 * **LLM-Assisted Review & Issue Verification:** Reviewing `dev3` provider modules with an LLM to identify targeted improvements, checking open/closed issues and PRs in `https://github.com/cloudmesh-ai/cloudmesh-ai-vm` to prevent duplicates, and filing unique issues where needed.
 * **Provider Progress (3 Providers):**
-  * **Provider 1 — WSL2:** Auditing `Wsl2Manager.py` on `dev3` (import standardization, binary detection, subprocess error handling, output normalization, and `link_ssh_dir` cleanup) and verifying local `pytest` / smoke tests before opening a PR.
+  * **Provider 1 — WSL2:** 
+
+       **Previous Progress** Auditing `Wsl2Manager.py` on `dev3` (import standardization, binary detection, subprocess error handling, output normalization, and `link_ssh_dir` cleanup) and verifying local `pytest` / smoke tests before opening a PR.
+
+    **Nov 17, 2026**
+
+    * **Integration test fix.** Updated the shared fixture to read `name` from `provider.list()` and the info test to check `Name` from `provider.info()`.
+    * **Cline review.** Used Cline to review `Wsl2Manager.py`. Cline identified that `run_command()` returns command failures as strings and suggested a broader provider refactor. I checked the suggestion against the source and used the reproduced `KeyError` to scope this PR to the two test expectations.
+    * **Verification.** Before the fix, all three selected tests errored during setup with `KeyError: 'Name'`. After the fix, Windows Git Bash reported `3 passed, 7 deselected in 6.55s`.
+    * **Pull request.** [PR #130 — Fix stale WSL2 integration test expectations](https://github.com/cloudmesh-ai/cloudmesh-ai-vm/pull/130) is open against `dev3`.
   * **Provider 2 — Multipass:** Credential tests and local VM container validation implemented; verifying smoke tests on `dev3` and checking open issues for incremental improvements.
   * **Provider 3 — Chameleon Cloud:** Credential tests implemented and SSH/API setup verified; reviewing `dev3` OpenStack/Chameleon provider code and open issues to submit focused PRs.
 * **Pull Requests:** Direct links to new PRs in `https://github.com/cloudmesh-ai/cloudmesh-ai-vm` will be listed below as each PR is opened.
