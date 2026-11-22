@@ -57,9 +57,23 @@ Changes to [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/mai
     * **Cline review.** Used Cline to review `Wsl2Manager.py`. Cline identified that `run_command()` returns command failures as strings and suggested a broader provider refactor. I checked the suggestion against the source and used the reproduced `KeyError` to scope this PR to the two test expectations.
     * **Verification.** Before the fix, all three selected tests errored during setup with `KeyError: 'Name'`. After the fix, Windows Git Bash reported `3 passed, 7 deselected in 6.55s`.
     * **Pull request.** [PR #130 — Fix stale WSL2 integration test expectations](https://github.com/cloudmesh-ai/cloudmesh-ai-vm/pull/130) is open against `dev3`.
-  * **Provider 2 — Multipass:** Credential tests and local VM container validation implemented; verifying smoke tests on `dev3` and checking open issues for incremental improvements.
+      * merged into `dev3` Nov19.
+    
+  * **Provider 2 — Multipass:** 
+  
+    **Previous Progress:** Credential tests and local VM container validation implemented; verifying smoke tests on `dev3` and checking open issues for incremental improvements.
+  
+    **Nov 22, 2026**
+
+    * **`info()` fix.** Updated the plain-text fallback to return `status` from `state` and default `ipv4` to `[]` and `ip` to `""` when no IPv4 address is reported. Preserved the existing `State` alias.
+    * **Cline review.** Cline identified the missing fields and proposed a regression test for a stopped VM with no IPv4 address. I reviewed the proposal against the source and applied the fix. The regression tests cover output with and without a `State` line.
+    * **Cross-provider check.** WSL2 and Chameleon use different `info()` paths and do not share the Multipass plain-text fallback.
+    * **Verification.** Ran `python -m pytest -q tests/unit/test_multipass_manager*.py` in Windows Git Bash. Result was `27 passed in 1.23s`. Live smoke testing is pending.
+    * **Pull request.** Pending submission against `dev3`.
+
+
   * **Provider 3 — Chameleon Cloud:** Credential tests implemented and SSH/API setup verified; reviewing `dev3` OpenStack/Chameleon provider code and open issues to submit focused PRs.
-* **Pull Requests:** Direct links to new PRs in `https://github.com/cloudmesh-ai/cloudmesh-ai-vm` will be listed below as each PR is opened.
+* **Pull Requests:** Direct links to new PRs in [https://github.com/cloudmesh-ai/cloudmesh-ai-vm](https://github.com/cloudmesh-ai/cloudmesh-ai-vm) will be listed below as each PR is opened.
 
 
 ## CATCHUP
