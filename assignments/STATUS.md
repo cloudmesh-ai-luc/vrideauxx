@@ -44,6 +44,37 @@ Changes to [`.gitignore`](https://github.com/cloudmesh-ai-luc/vrideauxx/blob/mai
 
 
 ## Cloudmesh-ai-vm Weekly Progress (Branch: `dev3`)
+
+
+* due Thus Nov 19/26: 
+    * What concrete progress did you make in your local cloud
+       * include urls to pull requests and/or issues
+    * What progress have you made in chameleon and/or jetstream
+       * include urls to pull requests and/or issues
+     * What progress have you made in your public cloud such as aws, azure, gcp
+        * include urls to pull requests and/or issues
+* due Thus Dec 03: 
+    * What concrete progress did you make in your local cloud
+       * include urls to pull requests and/or issues
+        * include the link to your smoke test results in cloudmesh-ai-vm-results
+    * What progress have you made in chameleon and/or jetstream
+        * include urls to pull requests and/or issues
+        * include the link to your smoke test results in cloudmesh-ai-vm-results
+     * What progress have you made in your public cloud such as aws, azure, gcp
+        * include urls to pull requests and/or issues
+        * include the link to your smoke test results in cloudmesh-ai-vm-results
+* due Thus Dec 10: 
+    * What concrete progress did you make in your local cloud
+       * include urls to pull requests and/or issues
+        * include the link to your smoke test results in cloudmesh-ai-vm-results
+    * What progress have you made in chameleon and/or jetstream
+        * include urls to pull requests and/or issues
+        * include the link to your smoke test results in cloudmesh-ai-vm-results
+     * What progress have you made in your public cloud such as aws, azure, gcp
+        * include urls to pull requests and/or issues
+        * include the link to your smoke test results in cloudmesh-ai-vm-results
+
+
 * **Branch Sync & Smoke Testing:** Keeping local repository synchronized with upstream `dev3` (including recent merges such as PR #119) and running existing smoke tests alongside provider `pytest` suites.
 * **LLM-Assisted Review & Issue Verification:** Reviewing `dev3` provider modules with an LLM to identify targeted improvements, checking open/closed issues and PRs in `https://github.com/cloudmesh-ai/cloudmesh-ai-vm` to prevent duplicates, and filing unique issues where needed.
 * **Provider Progress (3 Providers):**
